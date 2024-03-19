@@ -1,0 +1,254 @@
+:root{
+    --light:#0eaa00;
+    --dark:#047000;
+    --darker:#005100;
+    --secondary:#ffbb00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body,html{
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    font-size: 1.4rem;
+    align-items: center;
+    
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background: var(--light);
+}
+section{
+    scroll-margin-top:50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
+nav li{
+    font-size: 2.8rem;
+    border-bottom: 0.4rem transparent solid;
+    transition: 0.3sec ease-in-out;
+}
+nav li:hover{
+    border-bottom: 0.4rem var(--secondary)solid;
+    transition: 0.3sec ease-in-out;
+}
+.logo{
+    font-size: 4rem;
+    font-weight: 900;
+}
+main{
+    background:var(--dark);
+    padding: 4rem 0;
+    max-height: 100hv;
+}
+main.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_content{
+    display: grid;
+    place-items: center;
+}
+main h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hi_text{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+.name_text{
+    font-size: 5rem;
+}
+main h2{
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right:0.15em solid orange ;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4s steps(50,end),blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+@keyframes blink-caret{
+    from,to{
+       border-color: transparent;
+    }
+    50%{
+        border-color: orange;
+    }
+}
+.main-image img{
+   
+    height: 300px;
+    justify-content: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+/*project section*/
+.project{
+    background: var(--darker);
+}
+.project h2{
+        font-size: 6rem;
+        text-align: center;
+        padding: 2rem 0;
+}
+.cover{
+width: 500px;
+height: 400px;
+display: flex;
+margin-top: 50px;
+}
+.box{
+    margin: 15px;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content:center ;
+    text-align: center;
+    box-shadow:1px 0 10px #000000;
+}
+img{
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+.box:hover{
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+    opacity: 0.8;
+}
+.box:hover h3{
+    background-color: white;
+    color: var(--dark);
+    transform: translateY(0px);
+}
+.box h3{
+    padding: 1rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom:-6.5 ;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+/*contact section*/
+.cover2{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    
+    }
+    .box1{
+        margin: 50px;
+        width: 900px;
+        height: 20px;
+        align-items: center;
+        justify-content:center ;
+        text-align: center;
+    }
+    .box1 img{
+        width: 30px;
+        height: 20px;
+        display: flex;
+
+    }
+    .box1:hover{
+        transform: scale(1.07);
+        transition: 1s ease-in-out;
+        opacity: 0.8;
+    }
+   
+    .col{
+        width: 100%;
+    }
+    .col h4{
+        font-size: 3.2rem;
+        color: var(--secondary);
+        margin-bottom: 25px;
+        position:relative;
+        left:620px;
+        justify-items: center;
+    }
+    .col h4::before{
+        content: "";
+        position:absolute;
+        height: 4px;
+        width: 180px;
+        left: 1px;
+        bottom: -8px;
+        background: var(--light);
+    }
+   
+    .col .social{
+        width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px
+    }
+    .col .social a{
+        height: 40px;
+        width: 40px;
+        background: var(--darker);
+        color: var(--text-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    .col .social a:hover{
+        transform: scale(1.2);
+        color: var(--light);
+        background: var(--secondary);
+    }
+    
+        
+    
